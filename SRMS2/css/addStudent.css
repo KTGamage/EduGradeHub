@@ -1,0 +1,576 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar starts */
+
+.sidebar {
+    background-color: #005BBB;
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    overflow-y: auto;
+
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar .sidebar-header {
+    padding: 20px 10px 10px;
+    display: flex;
+}
+
+
+.sidebar .sidebar-header .logo {
+    height: 40px;
+    width: 40px;
+}
+
+.sidebar .sidebar-header .heading {
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.sidebar .sidebar-header .heading a {
+    text-decoration: none;
+}
+
+
+.sidebar .sidebar-header .heading-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.sidebar .sidebar-menu {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    position: relative;
+}
+
+.sidebar .dropdown1 li {
+    padding: 15px 10px;
+    position: relative;
+
+}
+
+.sidebar .dropdown1 li a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebar .dropdown1 .dropmenu-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+
+}
+
+.rotate {
+    transform: rotate(90deg);
+    transition: 0.3s ease;
+}
+
+.sidebar .dropdown1 .dropmenu-icon2 {
+    width: 10px;
+    height: 10px;
+    margin-left: 50px;
+}
+
+.sidebar .dropdown1 .text1 {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.sidebar .dropdown2 {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.sidebar .dropdown2 .dropmenu-icon3 {
+    width: 10px;
+    height: 10px;
+    margin-left: 122px;
+}
+
+.sidebar .dropdown2 .dropmenu-icon4 {
+    width: 10px;
+    height: 10px;
+    margin-left: 124px;
+}
+
+.sidebar .dropdown2 .text2 {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.sidebar .dropdown2 li {
+    padding-bottom: 10px;
+}
+
+.sidebar .dropdown-item {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.sidebar .dropdown-item.show {
+    display: block;
+}
+
+.sidebar .dropdown-item {
+    list-style: disc;
+    margin-left: 40px;
+    color: #ffffff;
+
+}
+
+.sidebar .dropdown-item .text3 {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+/* sidebar ends */
+
+.right-side-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 300px; 
+}
+
+/* navbar starts */
+
+.top-navBbar {
+    padding-left: 5px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 300px;
+    right: 0;
+    background: linear-gradient(to right, #005BBB, #74D79D);
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-navBbar .arrow {
+    height: 50px;
+}
+
+.navbar-content {
+    margin-top: 5px;
+    align-self: left;
+}
+
+.navbar-content ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-content ul li a{
+    cursor: pointer;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 30px;
+    gap: 10px;
+}
+
+.admin-profile h4, span {
+    color: #ffffff;
+}
+
+.admin-profile span {
+    font-size: 14px;
+}
+
+.admin-profile img {
+    width: 50px;
+}
+
+/* navbar ends */
+
+
+/* main content starts */
+
+
+
+.main-content-space {
+    flex: 1;
+    background-color: #F2F2F2;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    /* padding: 20px;  */
+   
+}
+
+.content-card{
+    margin: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card1{
+    display: block;
+    width: 100%;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+}
+
+.card1 .card1-header{
+    font-size: 12px;
+    color: #1E1E1E;
+    margin: 15px 30px;
+}
+
+.card1 .divider{
+    /* margin-top: 10px; */
+    width: 100%;
+    color: #D8D8D8;
+}
+
+.card1 .card1-body{
+    margin: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.card1 .student-profile{
+    padding-left: 10px;
+    display: block;
+}
+
+.card1 .student-profile .choose-profile{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.card1 .student-profile .choose-profile a{
+    cursor: pointer;
+}
+
+.card1 .detail-forum{
+    /* border: 1px solid green; */
+    width: 630px;
+}
+
+.card1 .student-profile button{
+    background-color: #005BBB;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.card1 .form-group{
+    margin: 10px;
+    display: flex;
+    /* border: 1px orange solid; */
+    justify-content: space-between;
+}
+
+.card1 .form-address{
+    width: 100%;
+}
+
+.card1 .form-address label{
+    display: block;
+    font-size: 13px;
+    color: #1E1E1E;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+.card1 .form-group label{
+    display: block;
+    font-size: 13px;
+    color: #1E1E1E;
+    font-weight: 550;
+    margin-bottom: 5px;
+
+}
+
+.card1 .form-group label span{
+    color: red;
+    font-size: 15px;
+}
+
+.card1 .form-group input[type="text"],
+        input[type="date"]{
+            width: 260px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #D1D5D8;
+            margin-bottom: 5px;
+        }
+
+.card1 .form-address input[type="text"]{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #D1D5D8;
+            margin-bottom: 5px;
+}
+
+
+/*-------------card2 starts---------------*/
+
+.card2{
+    width: 100%;
+    height: 550px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+}
+
+.card2 .card1-header{
+    font-size: 12px;
+    color: #1E1E1E;
+    margin: 15px 30px;
+}
+
+.card2 .divider{
+    /* margin-top: 10px; */
+    width: 100%;
+    color: #D8D8D8;
+}
+
+.card2 .card2-body{
+    margin: 20px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+}
+
+.card2 .detail-forum{
+    /* border: 1px solid green; */
+    width: 630px;
+}
+
+
+.card2 .form-group{
+    margin: 10px;
+    display: flex;
+    /* border: 1px orange solid; */
+    justify-content: space-between;
+}
+
+.card2 .form-long{
+    width: 100%;
+}
+
+.card2 .form-long label{
+    display: block;
+    font-size: 13px;
+    color: #1E1E1E;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+.card2 .form-group label{
+    display: block;
+    font-size: 13px;
+    color: #1E1E1E;
+    font-weight: 550;
+    margin-bottom: 5px;
+
+}
+
+.card2 .form-group label span{
+    color: red;
+    font-size: 15px;
+}
+
+.card2 .form-group input[type="text"],
+        input[type="date"]{
+            width: 260px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #D1D5D8;
+            margin-bottom: 5px;
+        }
+
+.card2 .form-long input[type="text"]{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #D1D5D8;
+            margin-bottom: 5px;
+}
+
+/*-------------card2 ends-----------*/
+
+/*-------------card3 starts---------*/
+
+.card3-body button{
+    background-color: #005BBB;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.card3-body .save-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 10px;
+    width: 100%;
+}
+.card3{
+    width: 100%;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+}
+
+.card3 .card1-header{
+    font-size: 12px;
+    color: #1E1E1E;
+    margin: 15px 30px;
+}
+
+.card3 .divider{
+    /* margin-top: 10px; */
+    width: 100%;
+    color: #D8D8D8;
+}
+
+.card3 .card3-body{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+}
+
+.card3 .detail-forum{
+    /* border: 1px solid green; */
+    width: 630px;
+}
+
+
+.card3 .form-group{
+    margin: 10px;
+    display: flex;
+    /* border: 1px orange solid; */
+    justify-content: space-between;
+}
+
+.card3 .form-long{
+    width: 100%;
+}
+
+.card3 .form-long label{
+    display: block;
+    font-size: 13px;
+    color: #1E1E1E;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+.card3 .form-group label{
+    display: block;
+    font-size: 13px;
+    color: #1E1E1E;
+    font-weight: 550;
+    margin-bottom: 5px;
+
+}
+
+.card3 .form-group label span{
+    color: red;
+    font-size: 15px;
+}
+
+.card3 .form-group input[type="text"],
+        input[type="date"]{
+            width: 260px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #D1D5D8;
+            margin-bottom: 5px;
+        }
+
+.card3 .form-long input[type="text"]{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #D1D5D8;
+            margin-bottom: 5px;
+}
+
+
+/*------------card3 ends----------*/
+
+/* main content ends */
+
+
+
+
+
+/* footer starts */
+
+footer {
+    height: 40px;
+    background: linear-gradient(to right, #005BBB, #74D79D);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 300px; 
+}
+
+
+/* footer ends */
