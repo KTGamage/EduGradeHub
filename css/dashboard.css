@@ -1,0 +1,405 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar starts */
+
+.sidebar {
+    background-color: #005BBB;
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    overflow-y: auto;
+
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar .sidebar-header {
+    padding: 20px 10px 10px;
+    display: flex;
+}
+
+
+.sidebar .sidebar-header .logo {
+    height: 40px;
+    width: 40px;
+}
+
+.sidebar .sidebar-header .heading {
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.sidebar .sidebar-header .heading a {
+    text-decoration: none;
+}
+
+
+.sidebar .sidebar-header .heading-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.sidebar .sidebar-menu {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    position: relative;
+}
+
+.sidebar .dropdown1 li {
+    padding: 15px 10px;
+    position: relative;
+
+}
+
+.sidebar .dropdown1 li a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebar .dropdown1 .dropmenu-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+
+}
+
+.rotate {
+    transform: rotate(90deg);
+    transition: 0.3s ease;
+}
+
+.sidebar .dropdown1 .dropmenu-icon2 {
+    width: 10px;
+    height: 10px;
+    margin-left: 50px;
+}
+
+.sidebar .dropdown1 .text1 {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.sidebar .dropdown2 {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.sidebar .dropdown2 .dropmenu-icon3 {
+    width: 10px;
+    height: 10px;
+    margin-left: 122px;
+}
+
+.sidebar .dropdown2 .dropmenu-icon4 {
+    width: 10px;
+    height: 10px;
+    margin-left: 124px;
+}
+
+.sidebar .dropdown2 .text2 {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.sidebar .dropdown2 li {
+    padding-bottom: 10px;
+}
+
+.sidebar .dropdown-item {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.sidebar .dropdown-item.show {
+    display: block;
+}
+
+.sidebar .dropdown-item {
+    list-style: disc;
+    margin-left: 40px;
+    color: #ffffff;
+
+}
+
+.sidebar .dropdown-item .text3 {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+/* sidebar ends */
+
+.right-side-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 300px; 
+}
+
+/* navbar starts */
+
+.top-navBbar {
+    padding-left: 5px;
+    display: flex;
+    background: linear-gradient(to right, #005BBB, #74D79D);
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-navBbar .arrow {
+    height: 50px;
+}
+
+.navbar-content {
+    margin-top: 5px;
+    align-self: left;
+}
+
+.navbar-content ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-content ul li a{
+    cursor: pointer;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 30px;
+    gap: 10px;
+}
+
+.admin-profile h4, span {
+    color: #ffffff;
+}
+
+.admin-profile span {
+    font-size: 14px;
+}
+
+.admin-profile img {
+    width: 50px;
+}
+
+/* navbar ends */
+
+/* main content starts */
+
+.main-content-space {
+    flex: 1;
+    background-color: #F2F2F2;
+    padding: 20px; 
+   
+}
+
+.content-card{
+    margin: 10px 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.content-card .card1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.content-card .card1 .card1-content{
+    display: flex;
+    align-items: center;
+}
+
+.content-card .card1 .card1-content .card-img{
+    width: 70px;
+    height: 70px;
+}
+
+.content-card .card1 .card1-content .card-img a{
+    cursor: pointer;
+}
+
+.content-card .card1 .card1-content .card-text{
+    margin-left: 15px;
+}
+
+.content-card .card1 .card1-content .card-text h3{
+    font-size: 15px;
+}
+
+.content-card .card1 .card1-content .card-text p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card2{
+    display: flex;
+    margin-top: 15px;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.card2 .left-side-card{
+    width: 430px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.card2 .left-side-card h3{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.card2 .left-side-card .card-details{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+
+.card2 .left-side-card .card-details .firt-column{
+    width: 200px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+
+.card2 .left-side-card .card-details .firt-column .column-card{
+    width: 180px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;    
+    border: 2px solid #D1D5D8;
+    margin: 0 5px;
+
+}
+.card2 .left-side-card .card-details .firt-column .column-card a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.card2 .left-side-card .firt-column .column-card span{
+    color: #000000;
+    font-size: 12px;
+}
+
+.card2 .left-side-card .card-details .second-column{
+    width: 200px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* border: 1px solid red; */
+}
+
+.card2 .left-side-card .card-details .second-column .column-card{
+    width: 180px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;    
+    border: 2px solid #D1D5D8;
+    margin: 10px 5px;
+
+}
+
+.card2 .left-side-card .card-details .second-column .column-card a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card2 .left-side-card .second-column .column-card span{
+    color: #000000;
+    font-size: 12px;
+}
+
+
+.card2 .right-side-card{
+    width: 430px;
+    height: 350px;
+    display:flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.card2 .right-side-card h3{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.card2 .right-side-card .calender{
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.card2 .right-side-card .calender img{
+    width: 380px;
+    height: 250px;
+}
+
+/* main content ends */
+
+/* footer starts */
+
+footer {
+    height: 40px;
+    background: linear-gradient(to right, #005BBB, #74D79D);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 300px; 
+}
+
+
+/* footer ends */

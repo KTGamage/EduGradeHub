@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Teacher</title>
+    <link rel="stylesheet" href="css/addTeacher.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img class="logo" src="img/flag.png">
+                <div class="heading">
+                    <a href="dashBoard.html"><span class="heading-text">ABHAYA COLLEGE</span></a>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul class="dropdown1">
+                    <li class="dropdown">
+                        <a href="#">
+                            <span class="text1"><img class="dropmenu-icon" src="img/Group2.png">Profile Management<img
+                                    class="dropmenu-icon2" src="img/Polygon 2.png"> </span></a>
+                        <ul class="dropdown2">
+                            <li><a href="adminProfile.html"><span class="text2">Admin</span></a></li>
+                            <li><a class="sub-btn" href="#"><span class="text3">Students</span><img
+                                        class="dropmenu-icon3" src="img/Polygon 3.png"></a>
+                                <ul class="dropdown-item">
+                                    <li><a href="#"><span class="text2">Add a New Student</span></a></li>
+                                    <li><a href="#"><span class="text2">View Student Details</span></a></li>
+                                    <li><a href="#"><span class="text2">Result Management</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a class="sub-btn" href="#"><span class="text2">Teachers<img class="dropmenu-icon4"
+                                            src="img/Polygon 3.png"></span></a>
+                                <ul class="dropdown-item">
+                                    <li><a href="#"><span class="text2">Add a New Teacher</span></a></li>
+                                    <li><a href="#"><span class="text2">View Teacher Details</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="#"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/notification2.png">Notification
+                                Management</span></a></li> -->
+                    <li><a href="#"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/class.png">Class Management</span></a></li>
+                    <li><a href="#"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/book.png">Subjects Management</span></a></li>
+                    <li><a href="#"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/Group.png">Settings</span></a></li>
+                    <li><a href="signin.html"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/logout.png">LogOut</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-side-content">
+            <div class="top-navBbar">
+                <img class="arrow" src="img/dot-arrow.png">
+                <div class="navbar-content">
+                    <ul>
+                        <!-- <li><a href="#"><img src="img/search.png"></a></li>
+                        <li><a href="#"><img src="img/message.png"></a></li>
+                        <li><a href="#"><img src="img/notification.png"></a></li>
+                        <li><a href="#"><img src="img/Group.png"></a></li> -->
+                        <li>
+                            <div class="admin-profile">
+                                <img src="img/profile.png">
+                                <div>
+                                    <h4>Sumith Perera</h4>
+                                    <span>Admin</span>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-content-space">
+                <div class="content-card">
+                    <div class="card1">
+                        <div class="card1-header">
+                            <h2>Teacher details</h2>
+                        </div>
+                        <hr class="divider">
+                        <div class="card1-body">
+                            <div class="student-profile">
+                                <img src="img/studentprofile.png">
+                                <div class="choose-profile">
+                                    <button type="submit" class="btn" href="#">
+                                        Choose file
+                                    </button>
+                                    <div><a><img src="img/close.png"></a></div>
+                                </div>
+                                
+                            </div>
+                            <div class="detail-forum">
+                                <form action="/submit-student-details" method="post">
+                                    <div class="form-group">
+                                        <div class="form-input">
+                                            <label for="firstName">First Name <span>*</span></label>
+                                            <input type="text" id="firstName" name="firstName" required
+                                                placeholder="Enter First Name">
+                                        </div>
+                                        <div>
+                                            <label for="lastName">Last Name <span>*</span></label>
+                                            <input type="text" id="lastName" name="lastName" required
+                                                placeholder="Enter Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <label for="nic">NIC <span>*</span></label>
+                                            <input type="text" id="nic" name="nic" required placeholder="Enter NIC Number">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-address">
+                                            <label for="address">Address <span>*</span></label>
+                                            <input type="text" id="address" name="address" required
+                                                placeholder="Enter Address">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <label for="contactNo">Contact No <span>*</span></label>
+                                            <input type="text" id="contactNo" name="contactNo"
+                                                required placeholder="Enter Contact Number">
+                                        </div>
+                                        <div>
+                                            <label for="subject">Subject <span>*</span></label>
+                                            <input type="text" id="subject" name="subject"
+                                                required placeholder="Enter Subject">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <label for="teacherId">Teacher ID <span>*</span></label>
+                                            <input type="text" id="teacherId" name="teacherId" required
+                                                placeholder="Enter Student ID">
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                                <div class="save-btn">
+                                    <button type="submit" class="btn" href="#">
+                                        Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <footer></footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //jquery for toggle sub menus
+            $('.sub-btn').click(function () {
+                $(this).next('.dropdown-item').slideToggle();
+                $(this).find('.dropmenu-icon3').toggleClass('rotate');
+                $(this).find('.dropmenu-icon4').toggleClass('rotate');
+            });
+        });
+    </script>
+</body>
+
+</html>
