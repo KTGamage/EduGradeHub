@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Add Marks</title>
+    <link rel="stylesheet" href="css/addmarks.css">
+</head>
+
+<body>
+
+
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img class="logo" src="img/flag.png">
+                <div class="heading">
+                    <a href="Signin.html"><span class="heading-text">ABHAYA COLLEGE</span></a>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul class="dropdown1">
+                    <li class="dropdown">
+                        <a href="#">
+                            <span class="text1"><img class="dropmenu-icon" src="img/Group2.png">Profile Management<img
+                                    class="dropmenu-icon2" src="img/Polygon 2.png"> </span></a>
+                        <ul class="dropdown2">
+                            <li><a class="sub-btn" href="#"><span class="text3">Students</span><img
+                                        class="dropmenu-icon3" src="img/Polygon 3.png"></a>
+                                <ul class="dropdown-item">
+                                    <li><a href="teacherAddMark.html"><span class="text2">Result Management</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/Group.png">Settings</span></a></li>
+                    <li><a href="signin.html"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/logout.png">LogOut</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="right-side-content">
+            <div class="top-navBbar">
+                <a href="teacherAddMark.html"><img class="arrow" src="img/dot-arrow.png"></a>
+                <div class="navbar-content">
+                    <ul>
+                        <!-- <li><a href="#"><img src="img/search.png"></a></li>
+                        <li><a href="#"><img src="img/message.png"></a></li>
+                        <li><a href="#"><img src="img/notification.png"></a></li>
+                        <li><a href="#"><img src="img/Group.png"></a></li> -->
+                        <li>
+                            <div class="admin-profile">
+                                <img src="img/profile.png">
+                                <div>
+                                    <h4>Nilantha Perera</h4>
+                                    <span>Teacher</span>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="main-content-space">
+                <div class="content-card">
+                    <div class="card1">
+                        <div class="marks-form">
+                            <form action="submit-add-marks" method="post">
+                                <div>
+                                    <div>
+                                        <label for="student">Student</label>
+                                        <div class="form-input">
+                                                <input type="text" id="student" name="student" required
+                                                placeholder="Please Select Student">
+                                                <div class="drop-down-img"><img src="img/drop-down.png"></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <label for="subject">Subject</label>
+                                        <input type="text" id="subject" name="subject" required
+                                            placeholder="Please Select Subject">
+                                    </div>
+                                    <div class="add-btn">
+                                        <label for="marks">Marks</label>
+                                        <input type="text" id="marks" name="marks" required>
+                                        <button type="submit" href="">Add</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="table-section">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Subject_ID</th>
+                                        <th>Subject Name</th>
+                                        <th>Marks</th>
+                                        <th class="action-clmn">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1108</td>
+                                        <td>Maths</td>
+                                        <td>45</td>
+                                        <td>
+                                            <div class="action-btn">
+                                                <a href="#"><img src="img/delete.png"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1108</td>
+                                        <td>Maths</td>
+                                        <td>45</td>
+                                        <td>
+                                            <div class="action-btn">
+                                                <a href="#"><img src="img/delete.png"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4">
+                                            <div class="btns">
+                                                <button class="save-btn" type="submit" href="">Save</button>
+                                                <button class="cancel-btn" type="submit" href="">Cancel</button>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                </tfoot>
+                            </table>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer></footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //jquery for toggle sub menus
+            $('.sub-btn').click(function () {
+                $(this).next('.dropdown-item').slideToggle();
+                $(this).find('.dropmenu-icon3').toggleClass('rotate');
+                $(this).find('.dropmenu-icon4').toggleClass('rotate');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
