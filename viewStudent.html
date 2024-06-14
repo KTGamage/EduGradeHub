@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Student Details</title>
+    <link rel="stylesheet" href="css/addStudent.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img class="logo" src="img/flag.png">
+                <div class="heading">
+                    <a href="dashBoard.html"><span class="heading-text">ABHAYA COLLEGE</span></a>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul class="dropdown1">
+                    <li class="dropdown">
+                        <a href="#">
+                            <span class="text1"><img class="dropmenu-icon" src="img/Group2.png">Profile Management<img
+                                    class="dropmenu-icon2" src="img/Polygon 2.png"> </span></a>
+                        <ul class="dropdown2">
+                            <li><a href="adminProfile.html"><span class="text2">Admin</span></a></li>
+                            <li><a class="sub-btn" href="#"><span class="text3">Students</span><img
+                                        class="dropmenu-icon3" src="img/Polygon 3.png"></a>
+                                <ul class="dropdown-item">
+                                    <li><a href="#"><span class="text2">Add a New Student</span></a></li>
+                                    <li><a href="#"><span class="text2">View Student Details</span></a></li>
+                                    <li><a href="#"><span class="text2">Result Management</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a class="sub-btn" href="#"><span class="text2">Teachers<img class="dropmenu-icon4"
+                                            src="img/Polygon 3.png"></span></a>
+                                <ul class="dropdown-item">
+                                    <li><a href="#"><span class="text2">Add a New Teacher</span></a></li>
+                                    <li><a href="#"><span class="text2">View Teacher Details</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="#"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/notification2.png">Notification
+                                Management</span></a></li> -->
+                    <li><a href="#"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/class.png">Class Management</span></a></li>
+                    <li><a href="#"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/book.png">Subjects Management</span></a></li>
+                    <li><a href="#"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/Group.png">Settings</span></a></li>
+                    <li><a href="signin.html"><span class="text1"><img class="dropmenu-icon"
+                                    src="img/logout.png">LogOut</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-side-content">
+            <div class="top-navBbar">
+                <img class="arrow" src="img/dot-arrow.png">
+                <div class="navbar-content">
+                    <ul>
+                        <!-- <li><a href="#"><img src="img/search.png"></a></li>
+                        <li><a href="#"><img src="img/message.png"></a></li>
+                        <li><a href="#"><img src="img/notification.png"></a></li>
+                        <li><a href="#"><img src="img/Group.png"></a></li> -->
+                        <li>
+                            <div class="admin-profile">
+                                <img src="img/profile.png">
+                                <div>
+                                    <h4>Sumith Perera</h4>
+                                    <span>Admin</span>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-content-space">
+                <div class="content-card">
+                    <div class="card1">
+                        <div class="card1-header">
+                            <h2>View Student details</h2>
+                        </div>
+                        <hr class="divider">
+                        <div class="card1-body">
+                            <div class="student-profile">
+                                <img src="img/studentprofile2.png">
+                                <div class="choose-profile">
+                                    <button type="submit" class="btn" href="#">
+                                        Choose file
+                                    </button>
+                                    <div><a><img src="img/close.png"></a></div>
+                                </div>
+                                
+                            </div>
+                            <div class="detail-forum">
+                                <form action="/submit-student-details" method="post">
+                                    <div class="form-group">
+                                        <div class="form-input">
+                                            <label for="firstName">First Name <span>*</span></label>
+                                            <input type="text" id="firstName" name="firstName" required
+                                                placeholder="Nipun">
+                                        </div>
+                                        <div>
+                                            <label for="lastName">Last Name <span>*</span></label>
+                                            <input type="text" id="lastName" name="lastName" required
+                                                placeholder="Sanjuka">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <label for="dob">Date of Birth <span>*</span></label>
+                                            <input type="date" id="dob" name="dob" required>
+                                        </div>
+                                        <div>
+                                            <label for="placeOfBirth">Place of Birth <span>*</span></label>
+                                            <input type="text" id="placeOfBirth" name="placeOfBirth" required
+                                                placeholder="Balapitiya">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-address">
+                                            <label for="address">Address <span>*</span></label>
+                                            <input type="text" id="address" name="address" required
+                                                placeholder="Seenigoda Junction, Wathugedara">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <label for="emergencyContactPerson">Emergency Contact Person <span>*</span></label>
+                                            <input type="text" id="emergencyContactPerson" name="emergencyContactPerson"
+                                                required placeholder="Mrs.L.Premawathi">
+                                        </div>
+                                        <div>
+                                            <label for="emergencyContactNumber">Emergency Contact Number <span>*</span></label>
+                                            <input type="text" id="emergencyContactNumber" name="emergencyContactNumber"
+                                                required placeholder="0775645340">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <label for="studentId">Student ID <span>*</span></label>
+                                            <input type="text" id="studentId" name="studentId" required
+                                                placeholder="21CIS0043">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="card2">
+                        <div class="card1-header">
+                            <h2>Parent details</h2>
+                        </div>
+                        <hr class="divider">
+                        <div class="card2-body">
+                           
+                            <div class="detail-forum">
+                                <form action="/submit-parent-details" method="post">
+                                    <div class="form-group">
+                                        <div class="form-long">
+                                            <label for="fatherName">Father's Name <span>*</span></label>
+                                            <input type="text" id="fatherName" name="fatherName" required
+                                                placeholder="Ms.L.Gayantha">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <label for="nic">NIC <span>*</span></label>
+                                            <input type="text" id="nic" name="nic" required
+                                            placeholder="19904576v">
+                                        </div>
+                                        <div>
+                                            <label for="contactNumber">Contact Number <span>*</span></label>
+                                            <input type="text" id="contactNumber" name="contactNumber" required
+                                                placeholder="0776545321">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-long">
+                                            <label for="address">Address <span>*</span></label>
+                                            <input type="text" id="address" name="address" required
+                                                placeholder="Seenigoda Junction, Wathugedara.">
+                                        </div>
+                                    </div>
+                                    <hr class="divider">
+                                    <div class="form-group">
+                                        <div class="form-long">
+                                            <label for="motherName">Mother's Name <span>*</span></label>
+                                            <input type="text" id="motherName" name="motherName"
+                                                required placeholder="Mrs.L.Premawathi">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <label for="nic">NIC <span>*</span></label>
+                                            <input type="text" id="nic" name="nic" required
+                                            placeholder="19915489v">
+                                        </div>
+                                        <div>
+                                            <label for="contactNumber">Contact Number <span>*</span></label>
+                                            <input type="text" id="contactNumber" name="contactNumber" required
+                                                placeholder="0776549870">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-long">
+                                            <label for="address">Address <span>*</span></label>
+                                            <input type="text" id="address" name="address" required
+                                                placeholder="Seenigoda Junction, Wathugedara.">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="card1-header">
+                            <h2>Medical details</h2>
+                        </div>
+                        <hr class="divider">
+                        <div class="card3-body">
+                           
+                            <div class="detail-forum">
+                                <form action="/submit-medical-details" method="post">
+                                    <div class="form-group">
+                                        <div class="form-long">
+                                            <label for="medicalCondition">Medical Conditions <span>*</span></label>
+                                            <input type="text" id="medicalCondition" name="medicalCondition" required
+                                                placeholder="He has good medical condition">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <label for="bloodGroup">Blood Group <span>*</span></label>
+                                            <input type="text" id="bloodGroup" name="bloodGroup" required
+                                            placeholder="A+">
+                                        </div>
+                                        <div>
+                                            <label for="emergencyContactNumber">Emergency Contact Number <span>*</span></label>
+                                            <input type="text" id="emergencyContactNumber" name="emergencyContactNumber" required
+                                                placeholder="0765421430">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-long">
+                                            <label for="allergies">Allergies <span>*</span></label>
+                                            <input type="text" id="allergies" name="allergies" required
+                                                placeholder="No allergies">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-long">
+                                            <label for="vaccines">Vaccines <span>*</span></label>
+                                            <input type="text" id="vaccines" name="vaccines" required
+                                                placeholder="Got COVID vaccines">
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                </form>
+                               
+                            </div>
+                            <div class="save-btn">
+                                <button type="submit" class="btn" href="#">
+                                    Edit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <footer></footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //jquery for toggle sub menus
+            $('.sub-btn').click(function () {
+                $(this).next('.dropdown-item').slideToggle();
+                $(this).find('.dropmenu-icon3').toggleClass('rotate');
+                $(this).find('.dropmenu-icon4').toggleClass('rotate');
+            });
+        });
+    </script>
+</body>
+
+</html>
